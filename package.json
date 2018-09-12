@@ -1,0 +1,44 @@
+{
+  "name": "k-finance",
+  "version": "1.0.0",
+  "description": "An updated version of KFinance that uses a different web-scraper on back-end and a React UI",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reshadbinharun/k-finance-v2.git"
+  },
+  "keywords": [
+    "kfinance",
+    "stock",
+    "analysis"
+  ],
+  "author": "Reshad Bin Harun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reshadbinharun/k-finance-v2/issues"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  },
+  "homepage": "https://github.com/reshadbinharun/k-finance-v2#readme",
+  "dependencies": {
+    "async": "^2.6.1",
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "jssoup": "0.0.9",
+    "mongodb": "^3.1.4",
+    "request": "^2.88.0",
+    "util": "^0.11.0"
+  }
+}
